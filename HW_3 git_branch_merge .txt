@@ -1,0 +1,46 @@
+
+GitHub HW_3
+
+1.  Create branches on local repository
+    На локальном репозитории сделать ветки для:
+- Postman - git branch postman
+- Jmeter - git branch jmeter
+- CheckLists - git branch checklists
+- Bug Reports - git branch bug_reports
+- SQL - git branch sql
+- Charles - git branch charles
+- Mobile testing - git branch mobile_testing
+
+2. Push all branches to remote repository
+   Запушить все ветки на внешний репозиторий  - git push -u origin --all
+
+3. In the BugReports branch, make a text document with the bug report structure
+   В ветке Bug Reports сделать текстовый документ со структурой баг репорта -  git checkout bug_reports, cat > structureBR.txt CTRL+C
+
+
+4. Push created file to the remore repository
+Запушить структуру багрепорта на внешний репозиторий - git add ., git commit -m "add str", git push
+
+5. Merge branch BugReports
+Вмержить ветку BugReports в Main - git checkout main, git merge BugReports
+
+
+
+6. Push main to remote repository
+Запушить main на внешний репозиторий. - git push -u origin main
+
+
+7. In branch CheckLists make text document with example of check list
+В ветке CheckLists набросать структуру чек листа. - git checkout checklists, touch  structureChList.txt, vim  structureChList.txt
+
+
+8.Push created file to remote repository
+ Запушить структуру на внешний репозиторий - git add ., git commit -m "add str_ch", git push
+
+
+
+9. On remote repository on GitHub make Pull request
+На внешнем репозитории сделать Pull Request ветки CheckLists в main - через pull request
+
+10. Synchronize Remote and Local branch Main 
+Синхронизировать Внешнюю и Локальную ветки Main - git checkout main, git pull
