@@ -4,12 +4,12 @@ GitHub HW_3
 1.  Create branches on local repository
     На локальном репозитории сделать ветки для:
 - Postman - git branch postman
-- Jmeter - git branch jmeter
-- CheckLists - git branch checklists
-- Bug Reports - git branch bug_reports
-- SQL - git branch sql
+- Jmeter - git branch Jmeter
+- CheckLists - git branch Checklists
+- Bug Reports - git branch Bug_reports
+- SQL - git branch SQL
 - Charles - git branch charles
-- Mobile testing - git branch mobile_testing
+- Mobile testing - git branch Mobile_testing
 
 2. Push all branches to remote repository
    Запушить все ветки на внешний репозиторий  - git push -u origin --all
