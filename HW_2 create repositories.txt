@@ -1,0 +1,355 @@
+Предусловия
+1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+2. Сценарий перенесите в этот файл.
+3. На против каждого действия - напишите команду в GitBash
+
+
+https://github.com/NataZykova/JSON.git
+https://github.com/NataZykova/XML.git
+https://github.com/NataZykova/TXT.git
+
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.     
+     	Зайти в свой акаунт на сайте github , нажать new, ввести название репозитория (JSON) , нажать creat Repos
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+   	зайти во внеш репоз JSON И скопировать ссылку 
+	git clone https://github.com/NataZykova/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+    	touch new.json
+    
+ 7. Добавить файл под гит.
+        git add .
+
+
+ 8. Закоммитить файл.
+	git commit -m "New file has added"
+	
+ 9. Отправить файл на внешний GitHub репозиторий.
+	git push 
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ 		vim new.json
+	
+{
+"firstName":"Nataliya",
+  	"lastName": "Zykova",
+  	"age":39,
+  	"pets":"dog",
+  	"expected salary":1600,
+  	"currency":"Eur"
+  		}
+
+ 11. Отправить изменения на внешний репозиторий.
+	git status
+	git add .
+	git commit -m "new data added"
+	git push
+
+
+
+ 12. Создать файл preferences.json
+	touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	vim preferences.json
+
+	{
+	"favoriteMovie":"Intouchables",
+  	"favoriteSeries": "Sherlok",
+  	"favoriteMeal":"Fish",
+  	"favoriteSeason":"Spring",
+  	"desiredCountry":"Norway"
+  
+  		}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	 touch skills.json
+	{
+	"skillApi":"Postman",
+  	"skillStresstest": "Jmeter",
+  	"skillMob":"Android",
+	"skillProgramm":"Phyton"
+  	}
+	
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+	
+	git status
+	git add .
+	git commit -m "add skills and preference "
+	git push
+	
+ 16. На веб интерфейсе создать файл bug_report.json.
+	открыть репозиторий и нажать Add file-Creat file
+	
+	
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes- creat bug report
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+  "Summary":"Неактивна кнопка обратной связи",
+  "Project": "multiplex.ua",
+  "Component:"Про компанию",
+  "Severity":"S4",
+   "Steps":{ "Step1": "Перейти на сайт multiplex.ua",
+	     "Step2":"Открыть боковое меню и выбрать раздел про компанию",
+	     "Step3":"Нажать  на кнопку обратная  связь"
+		}
+
+
+   "Actual Result":"Отображение информации в разделе обратная связь",
+    "Expected result":"Кнопка не активна"
+
+ }
+
+
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes-Update bug report
+
+
+
+
+   
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+	git fetch
+	git pull
+
+
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+	Зайти в свой акаунт на сайте github , нажать new, ввести название репозитория XML , нажать create Repos
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+	зайти во внеш репоз XML И скопировать ссылку
+	git clone https://github.com/NataZykova/XML.git
+
+
+ 23. Внутри локального XML создать файл “new.xml”.
+	touch new.xml
+
+
+	
+ 24. Добавить файл под гит.
+	git status
+	git add .
+
+
+ 25. Закоммитить файл.
+	git commit -m "new xml file has added"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+	git push
+
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	vim new.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <firstName>Nataliya</firstName>
+    <lastName>Zykova</lastName>
+    <age>39</age>
+    <pets>dog</pets>
+    <expectedsalary>1600</expectedsalary>
+    <currency>Eur</currency>
+</root>
+
+
+
+ 28. Отправить изменения на внешний репозиторий.
+	git status
+	git add .
+	git commit -m "New data added"
+	git push
+
+ 29. Создать файл preferences.xml
+	touch preferences.xml
+
+
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время
+ года, сторона которую хотели бы посетить) в формате XML.
+
+	vim preferences.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <favoriteMovie>Intouchables</favoriteMovie>
+    <favoriteSeries>Sherlok</favoriteSeries>
+    <favoriteMeat>Fish</favoriteMeat>
+    <favoriteSeason>Spring</favoriteSeason>
+    <desiredCountry>Norway</desiredCountry>
+</root>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	touch skills.xml
+	vim skills.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <skillApi>Postman</skillApi>
+    <skillStresstest>Jmeter</skillStresstest>
+    <skillMob>Android</skillMob>
+    <skillProgramm>Phyton</skillProgramm>
+</root>
+
+
+ 32. Сделать коммит в одну строку.
+
+	На винде не работает в одну строку
+
+	git add .
+	git commit -m "Prefer and skills are added"
+
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+	git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+открыть репозиторий и нажать Add file-Create file
+
+
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Commit changes- create bug report
+
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+    <?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <Summary>Неактивна кнопка обратной связи</Summary>
+    <Project>multiplex.ua</Project>
+    <Component>Про компанию</Component>
+    <Severity>S4</Severity>
+    <Steps>
+        <Step1>Перейти на сайт multiplex.ua</Step1>
+        <Step2>Открыть боковое меню и выбрать раздел про компанию</Step2>
+        <Step3>Нажать  на кнопку обратная  связь</Step3>
+    </Steps>
+      <AR>Отображение информации в разделе обратная связь</AR>
+    <ER>Кнопка не активна</ER>
+</root>
+
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit changes-Update bug report
+
+
+
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+        git fetch
+	git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+Зайти в свой акаунт на сайте github , нажать new, ввести название репозитория TXT , нажать creat Repos
+
+
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+	зайти во внеш репоз XML И скопировать ссылку
+	git clone https://github.com/NataZykova/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+	touch new.txt
+
+
+ 4. Добавить файл под гит.
+
+	git add .
+
+ 5. Закоммитить файл.
+	git commit -m "New txt file has added"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+	git push
+
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+	vim new.txt
+
+
+ 8. Отправить изменения на внешний репозиторий.
+	git add .
+	git commit -m "new txt file has added"
+	gir push
+
+
+
+ 9. Создать файл preferences.txt
+
+	touch preferences.txt
+
+
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+	vim preferences.txt
+
+
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+	touch skills.txt
+	vim skills.txt
+
+
+ 12. Сделать коммит в одну строку.
+на винде не работают запросы в одну сторку
+	git add .
+	git commit -m "new prefer and skills have added"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+
+
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+	открыть репозиторий и нажать Add file-Create file
+
+
+
+
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+	Commit changes -create bug report.txt
+
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+Summary Неактивна кнопка обратной связи
+Project multiplex.ua
+Component Про компанию
+Severity S4
+Steps
+Step1 Перейти на сайт multiplex.ua
+Step2 Открыть боковое меню и выбрать раздел про компанию
+Step3 Нажать  на кнопку обратная  связь
+AR Отображение информации в разделе обратная связь
+ER Кнопка не активна
+
+
+
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Commit changes-Update bug report
+
+
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+	git fetch
+	git pull
